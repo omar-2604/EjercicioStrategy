@@ -8,7 +8,7 @@ namespace EjercicioStrategy
 {
     internal class Pedido
     {
-        public double PrecioProducto;
+        public double precioProducto;
         private CosteEnvioStrategy coste;
         public void SetCoste(CosteEnvioStrategy coste)
         {
@@ -16,10 +16,9 @@ namespace EjercicioStrategy
         }
         public double MostrarTotal()
         {
-            return coste.CalcularCoste(PrecioProducto);
-            Console.WriteLine("Precio: " + precioProducto);
-            Console.WriteLine("Envío: " + envio);
-            Console.WriteLine("Total: " + (precioProducto + envio));
+        return coste.CalcularCoste(precioProducto);
+           
+           
         }
 
     }
